@@ -152,7 +152,7 @@ def plot_discords(ts: pd.DataFrame, discords: dict, is_detailed: bool = False) -
     fig.add_trace(go.Scatter(x=ts.index[discords_idx], y=discords_mp, mode='markers', marker=dict(symbol='star', color='red', size=7), name="Discords"), row=2, col=1)
 
     #plot annotation
-    if len(ts.shape) > 2:
+    if ts.shape[1] > 1:
         fig.add_trace(go.Scatter(x=ts.index, y=ts['label'], line=dict(color='green'), name="Annotation"), row=3, col=1)
 
     fig.update_layout(title_text="Top-k discords in time series")
