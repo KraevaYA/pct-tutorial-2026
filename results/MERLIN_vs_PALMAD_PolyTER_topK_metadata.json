@@ -1,0 +1,49 @@
+{
+  "created_at": "2026-04-04T17:20:32.638102",
+  "cpu_alg": "MERLIN",
+  "gpu_alg": "PALMAD",
+  "fixed_params": {
+    "minL": 60,
+    "maxL": 144
+  },
+  "varying_params": {
+    "topK": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  "metrics": [
+    "time",
+    "speedup",
+    "phase_stats"
+  ],
+  "data_length": 8760,
+  "has_annotation": false,
+  "cpu_info": {
+    "cpu": "x86_64",
+    "cpu_cores": 2,
+    "cpu_physical_cores": 1,
+    "ram_gb": 12.7,
+    "platform": "Linux-6.6.113+-x86_64-with-glibc2.35",
+    "python_version": "3.12.13"
+  },
+  "gpu_info": {
+    "available": true,
+    "numba_installed": true,
+    "device_name": "Tesla T4",
+    "device_count": 1,
+    "compute_capability": [
+      7,
+      5
+    ],
+    "max_threads_per_block": 1024,
+    "max_block_dim_x": 1024,
+    "max_block_dim_y": 1024,
+    "warp_size": 32
+  },
+  "cpu_alg_module": "anomaly_detection.algorithms.serial.merlin",
+  "gpu_alg_module": "anomaly_detection.algorithms.parallel.palmad"
+}

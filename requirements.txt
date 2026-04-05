@@ -1,0 +1,7 @@
+numba
+numpy
+pandas
+plotly
+protobuf
+psutil
+stumpy
